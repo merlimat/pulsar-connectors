@@ -19,12 +19,9 @@
 
 [versions]
 # Core
-pulsar = "4.2.0-SNAPSHOT"
+pulsar = "4.1.3"
+pulsar-connectors = "1.0.0-SNAPSHOT"
 java = "17"
-
-# Docker
-docker-jdk = "21"
-pulsar-client-python = "3.10.0"
 
 # Code quality
 checkstyle = "10.14.2"
@@ -219,6 +216,23 @@ jclouds = "2.6.0"
 shadow = "9.3.2"
 
 [libraries]
+# Pulsar
+pulsar-common = { module = "org.apache.pulsar:pulsar-common", version.ref = "pulsar" }
+pulsar-client = { module = "org.apache.pulsar:pulsar-client", version.ref = "pulsar" }
+pulsar-client-api = { module = "org.apache.pulsar:pulsar-client-api", version.ref = "pulsar" }
+pulsar-client-admin-api = { module = "org.apache.pulsar:pulsar-client-admin-api", version.ref = "pulsar" }
+pulsar-config-validation = { module = "org.apache.pulsar:pulsar-config-validation", version.ref = "pulsar" }
+pulsar-io-core = { module = "org.apache.pulsar:pulsar-io-core", version.ref = "pulsar" }
+pulsar-io-common = { module = "org.apache.pulsar:pulsar-io-common", version.ref = "pulsar" }
+pulsar-io-batch-discovery-triggerers = { module = "org.apache.pulsar:pulsar-io-batch-discovery-triggerers", version.ref = "pulsar" }
+pulsar-io-batch-data-generator = { module = "org.apache.pulsar:pulsar-io-batch-data-generator", version.ref = "pulsar" }
+pulsar-io-data-generator = { module = "org.apache.pulsar:pulsar-io-data-generator", version.ref = "pulsar" }
+pulsar-functions-api = { module = "org.apache.pulsar:pulsar-functions-api", version.ref = "pulsar" }
+pulsar-functions-instance = { module = "org.apache.pulsar:pulsar-functions-instance", version.ref = "pulsar" }
+pulsar-functions-utils = { module = "org.apache.pulsar:pulsar-functions-utils", version.ref = "pulsar" }
+pulsar-broker = { module = "org.apache.pulsar:pulsar-broker", version.ref = "pulsar" }
+testmocks = { module = "org.apache.pulsar:testmocks", version.ref = "pulsar" }
+
 # SLF4J
 slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 jcl-over-slf4j = { module = "org.slf4j:jcl-over-slf4j", version.ref = "slf4j" }
